@@ -23,15 +23,29 @@ Marcelo Olimpio -> [Github](https://github.com/M-DEV77)
 ### Backend:
 Marcelo Olimpio -> [Github](https://github.com/M-DEV77)
 ### Run List:
-
+- [x] List.
    - [x] Backend.
      - [X] install dependence
      - [x] config dependence
+       - [x] Dependence
+          - [x] Cors 2.8.5
+          - [x] Express 4.18.2
+          - [x] Nodemon 2.0.20
+          - [x] Sequelize 6.27.0
+          - [x] Sqlite3  
+          - [X] body-parse 0.1.0
+
      - [x] config bank data
      - [x] create system folder mvc
-     - [ ] create models end controllers
-     - [ ] config routers
-     - [ ] config ruler 
-   - [ ] Frontend.
+     - [x] create models end controllers
+     - [x] config routers
+     - [x] config ruler 
+   - [x] Frontend.
      - [x] install vite React
-     - [ ] install add dependence 
+     - [x] install add dependence 
+       - [X] Dependence
+          - [x] Axios 1.2.1
+          - [x] Events 3.3.0
+          - [x] React-icons 4.7.1
+          - [x] React-router-dom 6.5.0
+          - [x] Styled-components 5.3.6  

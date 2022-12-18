@@ -51,4 +51,10 @@ module.exports = class CampController{
    
        
  }
+
+ static async all(req,res){
+
+ }
+
+
 }

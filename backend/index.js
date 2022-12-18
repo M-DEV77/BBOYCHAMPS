@@ -1,7 +1,7 @@
 // basic config
 const PORT = 4500;
 const HOST = "http://localhost:";
-const FRONT = "http://localhost:3345"
+const FRONT = "http://127.0.0.1:5173/"
 // config dependence
 const db = require('./db/conn');
 const cors = require('cors');
