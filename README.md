@@ -33,5 +33,5 @@ Marcelo Olimpio -> [Github](https://github.com/M-DEV77)
      - [ ] config routers
      - [ ] config ruler 
    - [ ] Frontend.
-     - [ ] install vite React
+     - [x] install vite React
      - [ ] install add dependence 
