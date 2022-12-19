@@ -48,4 +48,8 @@ Marcelo Olimpio -> [Github](https://github.com/M-DEV77)
           - [x] Events 3.3.0
           - [x] React-icons 4.7.1
           - [x] React-router-dom 6.5.0
-          - [x] Styled-components 5.3.6  
+          - [x] Styled-components 5.3.6 
+## VERSION:
+- ver-001.
+- ver-002.
+- ver-003. 
