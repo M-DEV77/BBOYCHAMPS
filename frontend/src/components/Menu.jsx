@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import styled from "styled-components";
-import Logo1 from '/public/img/WBSYS.png'
+import Logo1 from '/img/WBSYS.png'
 export default function Menu(){
   const ContainerMenu = styled.div`
   display: flex;
