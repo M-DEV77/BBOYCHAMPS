@@ -8,6 +8,7 @@ const cors = require('cors');
 const express = require('express');
 const app = express();
 const campRouters = require('./routers/campRouters')
+const partRouters = require('./routers/participanteRouters')
 const bodyParser = require('body-parser')
 // solve cors
 app.use(cors({credentials:true, origin:FRONT}))
@@ -30,6 +31,7 @@ app.get("/",(req,res)=>{
         "<title>API-B.BOY</title><p>Rodando na porta: "+HOST+PORT+"</p>"
     )});
 app.use('/campeonato',campRouters)
+app.use('/participante',partRouters)
 
 // server start 
 app.listen(PORT,()=>{console.log(`Aplicação Rodando na pota: ${HOST+PORT}`)})
