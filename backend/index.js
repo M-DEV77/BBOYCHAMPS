@@ -1,7 +1,7 @@
 // basic config
 const PORT = 4500;
 const HOST = "http://localhost:";
-const FRONT = "http://127.0.0.1:5173/"
+const FRONT = "http://127.0.0.1:5173"
 // config dependence
 const db = require('./db/conn');
 const cors = require('cors');
@@ -11,7 +11,8 @@ const campRouters = require('./routers/campRouters')
 const partRouters = require('./routers/participanteRouters')
 const bodyParser = require('body-parser')
 // solve cors
-app.use(cors({credentials:true, origin:FRONT}))
+app.use(cors({credentials:true, origin:"http://127.0.0.1:5173"}))
+
 //public folder for images
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }))

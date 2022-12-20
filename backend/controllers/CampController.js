@@ -9,24 +9,31 @@ module.exports = class CampController{
   const totalInscricao = inscricao * total
     if(!nome){
       res.status(442).json({message:"O nome do campeonato é obrigatório!"})
+      return
     }
     if(!tipo){
       res.status(442).json({message:"Por favor digite o tipo de campeonato!"})
+      return
     }
     if(!chave){
       res.status(442).json({message:"Digite a quantidade chave!"})
+      return
     }
     if(!round){
       res.status(442).json({message:"Digite a quantidade de entrada!"})
+      return
     }
     if(!tempo){
       res.status(442).json({message:"Por favor digite o tempo de cada entrada!"})
+      return
     }
     if(!inscricao){
       res.status(442).json({message:"Digite um valor da inscrição!"})
+      return
     }
     if(!jurado){
       res.status(442).json({message:"Digite quantidade de jurados!"})
+      return
     }
 
     var totalCount1 = total+1

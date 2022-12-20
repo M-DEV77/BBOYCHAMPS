@@ -29,6 +29,10 @@ export default function Menu(){
    width: 1.4vw;
    height: auto;
    `
+   const Menu0 = styled.div`
+   display: flex;
+   `
+
    const Menu1 = styled.div`
    display: none;
    `
@@ -39,8 +43,9 @@ export default function Menu(){
     <ContainerMenu>
       <Img src={Logo1} alt="LOGO"/>
             <LinkMenu>  
-                <Link to="/">HOME</Link>
-                
+                   <Menu0>
+                        <Link to="/">HOME</Link>
+                   </Menu0>
                     <Menu1>
                         <Link to="/campeonatos">CAMPEONATOS</Link>
                         <Link to="/criar/campeonatos">NOVO</Link>

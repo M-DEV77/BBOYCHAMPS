@@ -9,30 +9,24 @@ border: 1px black solid;
 width: 30vw;
 height: 2vw;
 border-radius: 3px;
+cursor: pointer;
 `
-const Rotulo = styled.div`
-margin: 0.2vw;
-width: 2vw;
-`
-export default function Input({
-    type, 
-    text, 
-    name, 
-    placeholder,
+
+export default function BotaoSubmit({
+    
+   
     handleOnChange, 
     value,
-    multiple
+    
 }){
     return(
      <InputContainer>
-        <Rotulo>{text}</Rotulo>
+        
             <InputForm 
-            type={type}
-            name={name}
-            placeholder={placeholder}
+            type='submit'
             onChange={handleOnChange}
             value={value}
-            {...(multiple ? {multiple} : '')}
+            
             />
      </InputContainer>
     )
