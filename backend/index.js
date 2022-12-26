@@ -27,11 +27,11 @@ db.authenticate()
 })
 
 // routers basic
-app.get("/",(req,res)=>{ 
-    res.send(
-        "<title>API-B.BOY</title><p>Rodando na porta: "+HOST+PORT+"</p>"
-    )});
-app.use('/campeonato',campRouters)
+//app.get("/",(req,res)=>{ 
+    //res.send(
+        //"<title>API-B.BOY</title><p>Rodando na porta: "+HOST+PORT+"</p>"
+    //)});
+app.use('/',campRouters)
 app.use('/participante',partRouters)
 
 // server start 

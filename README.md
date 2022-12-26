@@ -40,29 +40,30 @@ Marcelo Olimpio -> [Github](https://github.com/M-DEV77)
      - [x] create routers
      - [x] create mvc folder system
      - [x] create end point   
-
      - [x] config bank data
      - [x] create system folder mvc
      - [x] create models end controllers
      - [x] config routers
      - [x] config ruler 
-   - [x] Frontend.
-     - [x] install vite React
-     - [x] install add dependence 
-     - [x] create layout base end css styles 
-  - [x] create react component 
-     - [x] container
-     - [x] footer
-     - [x] form
-     - [x] input
-     - [x] menu (navbar)  
+     - [ ] 
+   ## Frontend.
+
+    - [x] install vite React
+       - [x] install add dependence
+       - [x] Axios 1.2.1
+       - [x] Events 3.3.0
+       - [x] React-icons 4.7.1
+       - [x] React-router-dom 6.5.0
+       - [x] Styled-components 5.3.6  
+       - [x] create layout base end css styles 
+    - [x] create react component 
+      - [x] container
+      - [x] footer
+      - [x] form
+      - [x] input
+      - [x] menu  
      
-  - [X] Dependence
-     - [x] Axios 1.2.1
-     - [x] Events 3.3.0
-     - [x] React-icons 4.7.1
-     - [x] React-router-dom 6.5.0
-     - [x] Styled-components 5.3.6 
+  
 ## VERSION:
 - ver-001.
 - ver-002.

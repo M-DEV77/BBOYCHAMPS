@@ -5,7 +5,7 @@ import { useHref } from 'react-router-dom';
 export default function criarCamp(){
     async function criarCampeonato(user){
        try {
-        const data = await api.post('/campeonato/criar',user).then((response)=>{
+        const data = await api.post('/criar',user).then((response)=>{
          return response.data
         })
         console.log(data)

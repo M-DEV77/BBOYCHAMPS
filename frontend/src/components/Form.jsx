@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import styled from "styled-components";
 import BotaoSubmit from "./BotaoSubmit";
 import InputNome from "./Input";
-import api from "../utils/api";
+import api from "../utils/Api";
 
 
 
@@ -19,9 +19,12 @@ export default function Form (){
   function  handleSubmit(e){
      e.preventDefault()
      
-     api.post('/campeonato/criar',user)
+     api.post('/criar',user)
      .then(response =>{
       console.log(response.data)
+     })
+     .catch(err=>{
+      console.log(err)
      })
      
   }
