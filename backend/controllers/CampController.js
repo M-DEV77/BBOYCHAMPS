@@ -1,6 +1,7 @@
 const Campeonato = require('../models/CampModel');
 const Participantes = require('../models/ParticipantesModel');
 const Jurado = require('../models/JuradosModel');
+
 module.exports = class CampController{
  static async criar(req,res){
   const {nome,tipo,chave,round,tempo,inscricao,jurado}= req.body; 
@@ -105,12 +106,15 @@ module.exports = class CampController{
       ['createdAt','DESC']
     ]})
     .then(camps =>{
-      res.status(201).json({message:'Campeonatos encontrado com sucesso!',camps}) 
+      res.status(201).json({message:'Campeonatos encontrado com sucesso!',camps})
+       
     })
     .catch(err=>{
       res.status(500).json({message:`Nenhum campeonato encontrado!`,err})
     })
  }
+
+ 
 
 
  static async participantes(req,res){
@@ -127,6 +131,12 @@ module.exports = class CampController{
 
  static async getJurados(req,res){
 
+ }
+//deletar campeonato e participantes e jurados
+ static async deletar(req,res){
+   
+      await Campeonato.destroy();
+      
  }
 
 

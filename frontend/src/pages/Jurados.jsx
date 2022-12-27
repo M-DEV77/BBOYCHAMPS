@@ -1,5 +1,5 @@
 
-export default function Jurados(){
+export default function Campeonatos(){
     return(<>
         <title>Jurados</title>
         

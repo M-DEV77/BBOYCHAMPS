@@ -26,12 +26,8 @@ db.authenticate()
     console.log("Erro ao conectar ao banco de dados",err)   
 })
 
-// routers basic
-//app.get("/",(req,res)=>{ 
-    //res.send(
-        //"<title>API-B.BOY</title><p>Rodando na porta: "+HOST+PORT+"</p>"
-    //)});
-app.use('/',campRouters)
+
+app.use('/campeonato',campRouters)
 app.use('/participante',partRouters)
 
 // server start 

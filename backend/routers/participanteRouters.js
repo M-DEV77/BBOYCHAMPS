@@ -4,6 +4,7 @@ const campController = require('../controllers/CampController')
 //router.post('/criar',campController.criar)
 router.get('/pegar',campController.participantes)
 
+
 module.exports = router
 
 

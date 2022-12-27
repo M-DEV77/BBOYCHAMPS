@@ -1,36 +1,30 @@
 import Form from "../components/Form"
-import { useEffect,useState } from "react"
-import api from "../utils/Api"
+
 import CardCampeonato from "../components/CardCampeonato"
 
-export default function Home(){
-    const [camp,setCamp]= useState()
-    const [cont,setCont]=useState()
-useEffect(()=>{
-api.get("/",{
-
-})
-.then((response)=>{
-   setCamp(response.data.camps)
-   setCont(camp.length )
-  console.log(camp)
-  
-})
-
-})
-
+export default function Home(props){
+    
 
     return(<>
 
         <title>Home</title>
-          {cont === 0 && <Form />}
-          {cont > 0 &&  camp.map((campeonatos)=>(
+          {props.numero === 0 && <Form />}
+          {props.numero > 0 &&  props.mapa.map((campeonatos)=>(
+            <div>
             <CardCampeonato 
             nome={campeonatos.nome}
             tipo={campeonatos.tipo}
+            chave={campeonatos.chave}
+            total={campeonatos.total}
+            round={campeonatos.round}
+            tempo={campeonatos.tempo}
+            inscricao={campeonatos.inscricao}
+            jurado={campeonatos.jurado}  
+
             />
+           <p>{campeonatos.id}</p>
+           </div>
           ))}
-          
-        
+         
         </>)
 }

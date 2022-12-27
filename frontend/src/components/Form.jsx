@@ -3,7 +3,7 @@ import styled from "styled-components";
 import BotaoSubmit from "./BotaoSubmit";
 import InputNome from "./Input";
 import api from "../utils/Api";
-
+import {Link} from "react-router-dom";
 
 
 const FomContent = styled.form`
@@ -19,9 +19,10 @@ export default function Form (){
   function  handleSubmit(e){
      e.preventDefault()
      
-     api.post('/criar',user)
+     api.post('/campeonato/criar',user)
      .then(response =>{
       console.log(response.data)
+      
      })
      .catch(err=>{
       console.log(err)
