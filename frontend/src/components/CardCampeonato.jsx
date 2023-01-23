@@ -39,6 +39,7 @@ color: red;
             <Cont><Cont1>Valor da inscrição:</Cont1><Cont2> {props.inscricao}</Cont2></Cont>
             <Cont><Cont1>Quantidade de jurados:</Cont1><Cont2>{props.jurado}</Cont2></Cont>
         </DivCont>
+        
     </DivCard>
     
    )

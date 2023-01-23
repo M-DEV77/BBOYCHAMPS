@@ -134,9 +134,9 @@ module.exports = class CampController{
  }
 //deletar campeonato e participantes e jurados
  static async deletar(req,res){
-   
-      await Campeonato.destroy();
-      
+   await Campeonato.destroy();
+     res.status(201).json({message:"Campeonato deletado!"})
+   return
  }
 
 

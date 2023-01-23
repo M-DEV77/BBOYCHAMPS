@@ -22,7 +22,10 @@ export default function Home(props){
             jurado={campeonatos.jurado}  
 
             />
-           <p>{campeonatos.id}</p>
+            <form method="post" action="http://localhost:4500/campeonato/deletar">
+               <input type="hidden" name="id" value={campeonatos.id} />
+               <input type="submit" value="Deletar" /> 
+            </form>
            </div>
           ))}
          

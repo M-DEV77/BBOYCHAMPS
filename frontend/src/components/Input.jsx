@@ -5,7 +5,10 @@ padding: 0.4vw;
 
 `
 const InputForm = styled.input`
-border: 1px black solid;
+
+border: 1px black inherit;
+background-color: #e4e4e4;
+padding-left: 0.2vw;
 width: 30vw;
 height: 2vw;
 border-radius: 3px;

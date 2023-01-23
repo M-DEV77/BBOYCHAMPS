@@ -29,7 +29,7 @@ Api.get("/campeonato",{
   setCamp(response.data.camps.length) 
   setMapa(response.data.camps)
 })
-},[])
+},[""])
 console.log("teste"+camp)
 
   return (
